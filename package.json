@@ -46,6 +46,10 @@
     "flow-bin": "^0.38.0",
     "jest": "^18.1.0"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "scripts": {
     "build": "babel dedent.js --out-file dist/dedent.js",
     "lint": "eslint dedent.js __tests__",
