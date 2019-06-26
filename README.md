@@ -1,7 +1,9 @@
 # Dedent-Tabs
 
-![monthly downloads](https://img.shields.io/npm/dm/dedent-tabs.svg?style=for-the-badge)
-![dependents](https://img.shields.io/librariesio/dependents/npm/dedent-tabs.svg?style=for-the-badge)
+![monthly downloads](https://img.shields.io/npm/dm/dedent-tabs.svg)
+[![Build Status](https://travis-ci.com/adrianjost/dedent-tabs.svg?branch=master)](https://travis-ci.com/adrianjost/dedent-tabs)
+[![codecov](https://codecov.io/gh/adrianjost/dedent-tabs/branch/master/graph/badge.svg)](https://codecov.io/gh/adrianjost/dedent-tabs)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7e343810585c48f1ac7c2acdb8bdad5d)](https://www.codacy.com/app/adrianjost/dedent-tabs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=adrianjost/dedent-tabs&amp;utm_campaign=Badge_Grade)
 
 > It's basicly [dedent](https://www.npmjs.com/search?q=keywords:dedent), but with support for tabs.
 
