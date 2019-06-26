@@ -1,5 +1,8 @@
 # Dedent-Tabs
 
+![monthly downloads](https://img.shields.io/npm/dm/dedent-tabs.svg?style=for-the-badge)
+![dependents](https://img.shields.io/librariesio/dependents/npm/dedent-tabs.svg?style=for-the-badge)
+
 > It's basicly [dedent](https://www.npmjs.com/search?q=keywords:dedent), but with support for tabs.
 
 An ES6 string tag that strips indentation from multi-line strings.
