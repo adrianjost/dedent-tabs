@@ -84,6 +84,12 @@ describe("dedent", () => {
     expect(dd`\``).toMatchSnapshot();
   });
 
+  it("escapes dollar signs and open braces", () => {
+    expect(
+      dd`The following template expression should not be evaluated and escape correctly: \$\{test expression}`
+    ).toMatchSnapshot();
+  });
+
   it("doesn't strip exlicit newlines", () => {
     expect(dd`
       <p>Hello world!</p>\n
