@@ -70,7 +70,26 @@ Wait! I lied. Dedent can also be used as a function.
 
 ### Escape characters in template strings
 
-This library does not currently support all the escape characters that a standard ES6 template string supports.
+When using the template string tag syntax, for example:
+
+```
+dedent`
+  Hi there I am
+  a multi line
+  string
+`
+```
+
+`dedent` will not support all the escape sequences that a standard ES6 template string supports and will return them literally.
+
+For example:
+
+```
+console.log(dedent`
+  \xA9
+`)
+// Logs "\xA9"
+```
 
 The currently supported escape sequences are:
 
@@ -79,11 +98,11 @@ The currently supported escape sequences are:
 - [\\`](https://github.com/adrianjost/dedent-tabs/blob/d23380be141ccf7ba704f7b1e6ba9d3f0d388783/__tests__/dedent-tests.js#L83)
 - [\\\$ and \\{](https://github.com/adrianjost/dedent-tabs/blob/d23380be141ccf7ba704f7b1e6ba9d3f0d388783/__tests__/dedent-tests.js#L87)
 
-This is caused by having to bypass the native escape character handling to be able to handle newlines correctly.
+The reason these escape characters are not fully supported is due to having to bypass the native escape character handling (using the raw property) in order to be able to handle newlines correctly.
 
 There are plans to correct this in the future ([see Issue #109](https://github.com/adrianjost/dedent-tabs/issues/109)).
 
-All escape characters are supported when [using a regular string](https://github.com/adrianjost/dedent-tabs/blob/d23380be141ccf7ba704f7b1e6ba9d3f0d388783/__tests__/dedent-tests.js#L118) and calling dedent-tabs as a function.
+All escape characters are supported when [calling dedent-tabs as a function](https://github.com/adrianjost/dedent-tabs/blob/d23380be141ccf7ba704f7b1e6ba9d3f0d388783/__tests__/dedent-tests.js#L118).
 
 ## License
 
