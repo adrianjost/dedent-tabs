@@ -120,5 +120,9 @@ describe("dedent", () => {
       dd("\t\tfirst\n\t\t\tsecond\n\t\t\t\tthird")
     ).toMatchSnapshot();
   });
+
+  it("escapes template string expressions consistently", () => {
+    expect(dd`\$\{Hi}`).toEqual(dd("\$\{Hi}"));
+  })
   /* eslint-enable indent */
 });
