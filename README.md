@@ -4,7 +4,6 @@
 [![npm bundle size](https://img.shields.io/bundlephobia/min/dedent-tabs?color=brightgreen)](https://bundlephobia.com/result?p=dedent-tabs)
 ![monthly downloads](https://img.shields.io/npm/dm/dedent-tabs.svg)
 
-[![Build Status](https://travis-ci.com/adrianjost/dedent-tabs.svg?branch=master)](https://travis-ci.com/adrianjost/dedent-tabs)
 [![CI](https://github.com/adrianjost/dedent-tabs/workflows/CI/badge.svg)](https://github.com/adrianjost/dedent-tabs/actions?query=workflow%3ACI)
 [![Code Coverage](https://codecov.io/gh/adrianjost/dedent-tabs/branch/master/graph/badge.svg)](https://codecov.io/gh/adrianjost/dedent-tabs)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7e343810585c48f1ac7c2acdb8bdad5d)](https://www.codacy.com/app/adrianjost/dedent-tabs?utm_source=github.com&utm_medium=referral&utm_content=adrianjost/dedent-tabs&utm_campaign=Badge_Grade)
