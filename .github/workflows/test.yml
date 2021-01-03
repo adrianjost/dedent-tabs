@@ -1,11 +1,11 @@
 name: CI
-'on': push
+"on": push
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ '10', '12', '14' ]
+        node: ["10", "12", "14"]
     name: Test (Node ${{ matrix.node }})
     steps:
       - uses: actions/checkout@v2
@@ -17,9 +17,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: '${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles(''**/package-lock.json'') }}'
+          key: "${{ runner.os }}-node-${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}"
       - run: npm ci
       - run: npm run test
       - run: npx codecov
         env:
-          CODECOV_TOKEN: '${{ secrets.CODECOV_TOKEN }}'
+          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
